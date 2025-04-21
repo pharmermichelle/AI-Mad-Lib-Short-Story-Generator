@@ -1,0 +1,119 @@
+/* General body setup */
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #1c1c1c; /* Dark minimalist background */
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Header styling */
+h1 {
+  font-size: 3rem;
+  color: #add8e6; /* Baby blue for the header */
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 800;
+}
+
+/* Button styling */
+button {
+  background-color: #add8e6; /* Baby blue */
+  color: #1c1c1c;
+  font-size: 1.1rem;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 0 2px #add8e6;
+}
+
+/* No rounded corners */
+button:hover {
+  background-color: #87c4db;
+  color: #1c1c1c;
+}
+
+/* Container for short stories */
+#storiesContainer {
+  background-color: #2b2b2b;
+  border: 2px solid #add8e6;
+  padding: 20px;
+  max-width: 700px;
+  width: 90%;
+  margin-top: 2rem;
+  box-shadow: 0 0 10px rgba(173, 216, 230, 0.2);
+  color: #e0e0e0;
+  white-space: pre-wrap;
+  font-size: 1rem;
+  line-height: 1.6;
+  /* No border-radius: it's a sharp square */
+}
+
+/* Footer styling */
+.footer {
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  text-align: center;
+  color: #666;
+}
+
+.footer a {
+  color: #add8e6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  color: #87c4db;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  max-width: 700px;
+  width: 90%;
+}
+
+form input {
+  padding: 12px;
+  border: 2px solid #add8e6;
+  background-color: #2b2b2b;
+  color: #e0e0e0;
+  font-size: 1rem;
+  flex: 1 1 200px;
+  border-radius: 0;
+  outline: none;
+}
+
+form input::placeholder {
+  color: #999;
+}
+
+form button {
+  background-color: #add8e6;
+  color: #1c1c1c;
+  font-size: 1.1rem;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 0;
+  box-shadow: 0 0 0 2px #add8e6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+form button:hover {
+  background-color: #87c4db;
+}

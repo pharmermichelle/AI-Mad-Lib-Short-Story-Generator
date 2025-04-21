@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>📖 AI Short Story Generator</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <h1>📖 Mad Libs Story Maker</h1>
+
+    <form id="madLibForm">
+      <input type="text" id="name" placeholder="A character name" required />
+      <input type="text" id="adjective" placeholder="An adjective" required />
+      <input type="text" id="animal" placeholder="An animal" required />
+      <input type="text" id="place" placeholder="A place" required />
+      <input type="text" id="object" placeholder="An object" required />
+      <button type="submit">Generate Story</button>
+    </form>
+
+    <div id="storiesContainer"></div>
+
+    <div class="footer">
+      Made with ❤️ by Michelle Waite <br />
+      <a href="https://www.linkedin.com/in/michelle-waite/">(LinkedIn)</a>
+      &
+      <a href="http://github.com/pharmermichelle/">(GitHub)</a>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
