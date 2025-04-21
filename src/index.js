@@ -50,5 +50,30 @@ function typeStory(storyText) {
     delay: 30,
   });
 
-  typewriter.typeString(storyText).start();
+  typewriter
+    .typeString(storyText)
+    .callFunction(() => {
+      // Create the Reset button
+      const resetButton = document.createElement("button");
+      resetButton.innerText = "Reset";
+      resetButton.style.marginTop = "20px";
+      resetButton.style.display = "block";
+      resetButton.style.padding = "10px 20px";
+      resetButton.style.fontSize = "16px";
+      resetButton.style.borderRadius = "6px";
+      resetButton.style.backgroundColor = "#4caf50";
+      resetButton.style.color = "white";
+      resetButton.style.border = "none";
+      resetButton.style.cursor = "pointer";
+
+      // Add click event to reset everything
+      resetButton.addEventListener("click", () => {
+        document.getElementById("madLibForm").reset();
+        container.innerHTML = "";
+      });
+
+      // Append the button to the container
+      container.appendChild(resetButton);
+    })
+    .start();
 }
