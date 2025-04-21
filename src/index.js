@@ -19,6 +19,7 @@ function getStory() {
 
   document.getElementById("storiesContainer").innerHTML =
     "Creating your story...";
+  document.getElementById("storiesContainer").classList.add("blink");
 
   axios
     .get(apiUrl)
@@ -41,6 +42,7 @@ function getStory() {
 
 function typeStory(storyText) {
   const container = document.getElementById("storiesContainer");
+  container.classList.remove("blink");
   container.innerHTML = "";
 
   const typewriter = new Typewriter(container, {
